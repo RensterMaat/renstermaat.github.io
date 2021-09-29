@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Een cadeautje voor Des</title>
+        <title>Homo universalis</title>
     </head>
     <body>
         <center>
             <h3>Heeft de Homo Universalis zijn trui al?</h3>
             <h1>NEE</h1>
             <h3>Het is inmiddels</h3>
-            <h1 id="timer">0 maand, 0 dagen, 0 uur, 0 minuten en 0 seconden</h1>
+            <h1 id="timer">0 maanden, 0 dagen, 0 uur, 0 minuten en 0 seconden</h1>
             <h3>geleden dat de Homo Universalis de Valelympics heeft gewonnen.</h3>
             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg/800px-Da_Vinci_Vitruve_Luc_Viatour.jpg'>
             <script>
@@ -20,7 +20,7 @@
                     let hourDiff = endTime.getHours() - startTime.getHours()
                     let minuteDiff = endTime.getMinutes() - startTime.getMinutes()
                     let secondDiff = endTime.getSeconds() - startTime.getSeconds()
-                    document.getElementById("timer").innerText = `${monthDiff} maand, ${dayDiff} dagen, ${hourDiff} uur, ${minuteDiff} minuten en ${secondDiff} seconden`
+                    document.getElementById("timer").innerText = `${monthDiff} maanden, ${dayDiff} dagen, ${hourDiff} uur, ${minuteDiff} minuten en ${secondDiff} seconden`
                 }
                 setInterval(updateTime, 1000)
             </script>
