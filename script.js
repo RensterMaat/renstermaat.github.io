@@ -52,3 +52,11 @@ function resetCalculator() {
 
     document.getElementById('result').innerText = "0%";
 }
+
+// Detect if the device is touch capable
+if ('ontouchstart' in window) {
+    // If it is a touch device, remove the hover styles by applying a class to the body
+    document.body.classList.add('touch-device');
+} else {
+    // If it's not a touch device, you can add any non-touch specific JavaScript (if any) here
+}

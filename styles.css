@@ -98,23 +98,12 @@ p {
     }
 }
 
-/* Assume all devices as touch devices initially and disable hover */
-* {
-    pointer-events: none;
+/* Hover styles for non-touch devices */
+body:not(.touch-device) .category-btn:hover,
+body:not(.touch-device) .reset-btn:hover {
+    background-color: #ddd;
 }
 
-/* Enable pointer events and apply hover styles for non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-    * {
-        pointer-events: auto;
-    }
-
-    .category-btn:hover,
-    .reset-btn:hover {
-        background-color: #ddd;
-    }
-
-    .calculate-btn:hover {
-        background-color: #0056b3;
-    }
+body:not(.touch-device) .calculate-btn:hover {
+    background-color: #0056b3;
 }
