@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response to Treatment Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calculate Probability of Response to Treatment</h2>
+
+        <div class="input-group">
+            <p>Liver metastases:</p>
+            <button onclick="setCategory('liverMetastases', 'absent')" class="category-btn"
+                id="liverMetastases-absent">Absent</button>
+            <button onclick="setCategory('liverMetastases', 'present')" class="category-btn"
+                id="liverMetastases-present">Present</button>
+            <button onclick="setCategory('liverMetastases', 'missing')" class="category-btn"
+                id="liverMetastases-missing">Missing</button>
+        </div>
+
+        <div class="input-group">
+            <p>Brain metastases:</p>
+            <button onclick="setCategory('brainMetastases', 'absent')" class="category-btn"
+                id="brainMetastases-absent">Absent</button>
+            <button onclick="setCategory('brainMetastases', 'presentAsymptomatic')" class="category-btn"
+                id="brainMetastases-presentAsymptomatic">Present and Asymptomatic</button>
+            <button onclick="setCategory('brainMetastases', 'presentSymptomatic')" class="category-btn"
+                id="brainMetastases-presentSymptomatic">Present and Symptomatic</button>
+            <button onclick="setCategory('brainMetastases', 'missing')" class="category-btn"
+                id="brainMetastases-missing">Missing</button>
+        </div>
+
+        <div class="input-group">
+            <p>LDH:</p>
+            <button onclick="setCategory('ldh', 'normal')" class="category-btn" id="ldh-normal">Normal</button>
+            <button onclick="setCategory('ldh', 'elevated')" class="category-btn" id="ldh-elevated">Elevated</button>
+            <button onclick="setCategory('ldh', 'moreThanTwice')" class="category-btn" id="ldh-moreThanTwice">More than
+                twice the upper limit of normal</button>
+            <button onclick="setCategory('ldh', 'missing')" class="category-btn" id="ldh-missing">Missing</button>
+        </div>
+
+        <div class="input-group">
+            <p>WHO performance status:</p>
+            <button onclick="setCategory('whoStatus', '0')" class="category-btn" id="whoStatus-0">0</button>
+            <button onclick="setCategory('whoStatus', '1')" class="category-btn" id="whoStatus-1">1</button>
+            <button onclick="setCategory('whoStatus', '2-4')" class="category-btn" id="whoStatus-2-4">2-4</button>
+            <button onclick="setCategory('whoStatus', 'missing')" class="category-btn"
+                id="whoStatus-missing">Missing</button>
+        </div>
+
+        <div class="input-group">
+            <p>Clark score:</p>
+            <button onclick="setCategory('clarkScore', 'absent')" class="category-btn"
+                id="clarkScore-absent">Absent</button>
+            <button onclick="setCategory('clarkScore', 'non-brisk')" class="category-btn"
+                id="clarkScore-non-brisk">Non-brisk</button>
+            <button onclick="setCategory('clarkScore', 'brisk')" class="category-btn"
+                id="clarkScore-brisk">Brisk</button>
+            <button onclick="setCategory('clarkScore', 'missing')" class="category-btn"
+                id="clarkScore-missing">Missing</button>
+        </div>
+
+
+        <h3>Probability of response: <span id="result">0%</span></h3>
+        <button onclick="resetCalculator()" class="reset-btn">Reset</button>
+        <p class="disclaimer">Disclaimer: This calculator is for demonstration purposes only and should not be used to
+            guide
+            clinical decisions.</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

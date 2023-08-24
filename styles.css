@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label,
+p {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.category-btn,
+.calculate-btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #d1d1d1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-btn:hover,
+.calculate-btn:hover {
+    background-color: #ddd;
+}
+
+.calculate-btn {
+    display: block;
+    margin: 20px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.calculate-btn:hover {
+    background-color: #0056b3;
+}
+
+.selected {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+
+.reset-btn {
+    display: block;
+    margin: 20px 0;
+    background-color: #8a8a8a;
+    /* Neutral gray color */
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #6d6d6d;
+    /* Slightly darker gray for hover effect */
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #8a8a8a;
+    /* Using the same neutral gray as the reset button for consistency */
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
